@@ -1,0 +1,35 @@
+body {
+  margin: 0 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(230, 187, 219);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+  grid-column: 2;
+}
+
+p {
+  grid-column: 1;
+  align-items: center;
+  align-self: center;
+  grid-row: 1 / 2;
+}
+
+button {
+  background: #cfd;
+  font-size: 1rem;
+  padding: 20px 40px;
+  text-decoration: none;
+  border: none;
+  width: auto;
+  align-items: flex-start;
+  grid-column: 1 / -1;
+  place-self: center;
+}
